@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bristol zoo monkeys caught secretly sharing ONE Amazon account</title>
+<style>
+  :root {
+    --ink: #14110f;
+    --paper: #ffffff;
+    --wash: #f3f1ee;
+    --rule: #e2ded8;
+    --brand: #b3001b;        /* tabloid red */
+    --brand-dark: #7d0013;
+    --link: #0a5ad6;
+    --muted: #6b6760;
+    --tag: #b3001b;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: 'Helvetica Neue', Arial, system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--sans); color: var(--ink); background: var(--wash); line-height: 1.6; }
+  img { max-width: 100%; display: block; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* top strip */
+  .topbar { background: var(--ink); color: #cfcabf; font-size: 0.72rem; letter-spacing: 0.04em; }
+  .topbar .inner { max-width: 1100px; margin: 0 auto; padding: 0.4rem 1rem; display: flex; justify-content: space-between; align-items: center; }
+  .topbar a { color: #cfcabf; }
+  .topbar .date { text-transform: uppercase; }
+
+  /* masthead */
+  .masthead { background: var(--paper); border-bottom: 3px solid var(--brand); }
+  .masthead .inner { max-width: 1100px; margin: 0 auto; padding: 0.9rem 1rem; display: flex; align-items: center; gap: 0.6rem; }
+  .logo { font-family: var(--serif); font-weight: 700; font-size: 2rem; letter-spacing: -0.02em; color: var(--ink); }
+  .logo .live { color: var(--brand); }
+  .masthead .tagline { font-size: 0.72rem; color: var(--muted); margin-left: auto; text-transform: uppercase; letter-spacing: 0.08em; }
+
+  /* nav */
+  nav.sections { background: var(--paper); border-bottom: 1px solid var(--rule); }
+  nav.sections .inner { max-width: 1100px; margin: 0 auto; padding: 0 1rem; display: flex; gap: 1.1rem; overflow-x: auto; }
+  nav.sections a { color: var(--ink); font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em; padding: 0.7rem 0; white-space: nowrap; border-bottom: 3px solid transparent; }
+  nav.sections a:hover { color: var(--brand); text-decoration: none; border-bottom-color: var(--brand); }
+
+  /* layout */
+  .layout { max-width: 1100px; margin: 1.2rem auto; padding: 0 1rem; display: grid; grid-template-columns: 1fr 320px; gap: 2rem; }
+  @media (max-width: 860px) { .layout { grid-template-columns: 1fr; } .aside { order: 2; } }
+
+  article { background: var(--paper); border: 1px solid var(--rule); }
+  .article-pad { padding: 1.4rem 1.5rem 2rem; }
+  @media (max-width: 520px){ .article-pad { padding: 1.1rem 1rem 1.6rem; } }
+
+  .breadcrumb { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--brand); font-weight: 700; margin-bottom: 0.6rem; }
+  h1.headline { font-family: var(--serif); font-weight: 700; font-size: 2.15rem; line-height: 1.12; letter-spacing: -0.01em; margin-bottom: 0.7rem; }
+  @media (max-width: 520px){ h1.headline { font-size: 1.6rem; } }
+  .standfirst { font-size: 1.12rem; color: #34302b; font-weight: 400; line-height: 1.45; margin-bottom: 1.1rem; }
+  .standfirst em, .standfirst i { font-style: italic; }
+
+  .byline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.8rem; padding: 0.7rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-size: 0.8rem; color: var(--muted); margin-bottom: 1.2rem; }
+  .byline .author { color: var(--ink); font-weight: 700; }
+  .byline .share { margin-left: auto; display: flex; gap: 0.4rem; }
+  .byline .share button { border: 1px solid var(--rule); background: var(--paper); width: 30px; height: 30px; border-radius: 50%; cursor: pointer; color: var(--muted); font-size: 0.8rem; }
+  .byline .share button:hover { background: var(--brand); color: #fff; border-color: var(--brand); }
+
+  figure { margin: 0 0 1.2rem; }
+  figure .ph { background: linear-gradient(135deg, #cdd7c4, #b7c7d6); height: 300px; display: flex; align-items: center; justify-content: center; color: #ffffff; }
+  figure .ph span { font-size: 4rem; }
+  figcaption { font-size: 0.74rem; color: var(--muted); padding: 0.45rem 0.2rem; border-bottom: 1px solid var(--rule); }
+  figcaption strong { color: var(--ink); }
+
+  .body p { font-family: var(--serif); font-size: 1.06rem; line-height: 1.72; margin-bottom: 1.05rem; color: #1d1a17; }
+  .body p:first-of-type::first-letter { font-size: 3.2rem; line-height: 0.8; float: left; font-weight: 700; padding: 0.1rem 0.5rem 0 0; color: var(--brand); }
+  .body h2 { font-family: var(--sans); font-size: 1.25rem; font-weight: 700; margin: 1.6rem 0 0.7rem; }
+  .pullquote { border-left: 4px solid var(--brand); padding: 0.3rem 0 0.3rem 1rem; margin: 1.3rem 0; font-family: var(--serif); font-style: italic; font-size: 1.3rem; line-height: 1.4; color: var(--brand-dark); }
+
+  .tags { margin-top: 1.6rem; padding-top: 1rem; border-top: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .tags a { background: var(--wash); border: 1px solid var(--rule); padding: 0.35rem 0.7rem; font-size: 0.74rem; border-radius: 4px; color: var(--ink); font-weight: 700; }
+  .tags a:hover { background: var(--brand); color: #fff; border-color: var(--brand); text-decoration: none; }
+
+  /* sidebar */
+  .aside .widget { background: var(--paper); border: 1px solid var(--rule); margin-bottom: 1.2rem; }
+  .widget h3 { background: var(--ink); color: #fff; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.6rem 0.9rem; }
+  .widget ol { list-style: none; counter-reset: mr; }
+  .widget ol li { counter-increment: mr; display: flex; gap: 0.7rem; padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--rule); align-items: flex-start; }
+  .widget ol li:last-child { border-bottom: none; }
+  .widget ol li::before { content: counter(mr); font-family: var(--serif); font-weight: 700; font-size: 1.3rem; color: var(--brand); line-height: 1; min-width: 1.1rem; }
+  .widget ol li a { font-weight: 700; font-size: 0.86rem; color: var(--ink); line-height: 1.3; }
+  .widget ol li a:hover { color: var(--brand); }
+  .promo { padding: 0.9rem; font-size: 0.85rem; color: var(--muted); }
+  .promo .big { font-family: var(--serif); font-weight: 700; color: var(--ink); font-size: 1rem; margin-bottom: 0.3rem; }
+
+  /* comments */
+  .comments { background: var(--paper); border: 1px solid var(--rule); margin-top: 1.2rem; }
+  .comments .chead { padding: 0.8rem 1.5rem; border-bottom: 1px solid var(--rule); font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; }
+  .comments .chead .count { background: var(--brand); color: #fff; font-size: 0.74rem; padding: 0.1rem 0.5rem; border-radius: 10px; }
+  .cform { padding: 1rem 1.5rem; border-bottom: 1px solid var(--rule); }
+  .cform textarea { width: 100%; border: 1px solid var(--rule); border-radius: 6px; padding: 0.7rem; font-family: var(--sans); font-size: 0.9rem; resize: vertical; min-height: 70px; }
+  .cform .row { display: flex; gap: 0.6rem; margin-top: 0.6rem; align-items: center; }
+  .cform input { flex: 1; border: 1px solid var(--rule); border-radius: 6px; padding: 0.55rem 0.7rem; font-size: 0.9rem; }
+  .cform button { background: var(--brand); color: #fff; border: none; padding: 0.55rem 1.2rem; border-radius: 6px; font-weight: 700; cursor: pointer; }
+  .cform button:hover { background: var(--brand-dark); }
+  .clist { padding: 0.5rem 1.5rem 1.2rem; }
+  .comment { padding: 0.9rem 0; border-bottom: 1px solid var(--rule); }
+  .comment:last-child { border-bottom: none; }
+  .comment .meta { font-size: 0.8rem; margin-bottom: 0.3rem; }
+  .comment .meta .name { font-weight: 700; color: var(--ink); }
+  .comment .meta .time { color: var(--muted); margin-left: 0.5rem; }
+  .comment .text { font-size: 0.92rem; color: #2a2622; }
+  .comment .votes { margin-top: 0.4rem; font-size: 0.8rem; color: var(--muted); display: flex; gap: 0.9rem; }
+  .comment .votes button { background: none; border: none; cursor: pointer; color: var(--muted); font-size: 0.8rem; font-weight: 700; }
+  .comment .votes button:hover { color: var(--brand); }
+
+  footer.site { background: var(--ink); color: #aaa49a; margin-top: 1.5rem; }
+  footer.site .inner { max-width: 1100px; margin: 0 auto; padding: 1.4rem 1rem; font-size: 0.78rem; }
+  footer.site .logo-sm { font-family: var(--serif); font-weight: 700; font-size: 1.3rem; color: #fff; margin-bottom: 0.4rem; }
+  footer.site .logo-sm .live { color: var(--brand); }
+</style>
+</head>
+<body>
+  <div class="topbar"><div class="inner">
+    <span class="date" id="topdate">Monday 16 June 2026</span>
+    <span><a href="#">Sign in</a> · <a href="#">Newsletters</a> · <a href="#">Bristol</a></span>
+  </div></div>
+
+  <header class="masthead"><div class="inner">
+    <span class="logo">Bristol<span class="live">Live</span></span>
+    <span class="tagline">News · Bristol · What's On</span>
+  </div></header>
+
+  <nav class="sections"><div class="inner">
+    <a href="#">News</a><a href="#">Bristol City</a><a href="#">Bristol Rovers</a>
+    <a href="#">What's On</a><a href="#">Things to Do</a><a href="#">In Your Area</a>
+    <a href="#">Crime</a><a href="#">Traffic</a><a href="#">Weird News</a>
+  </div></nav>
+
+  <div class="layout">
+    <main>
+      <article>
+        <div class="article-pad">
+          <div class="breadcrumb">News › Weird News</div>
+          <h1 class="headline">Bristol zoo monkeys caught secretly sharing ONE Amazon account – and keepers can't quite believe it</h1>
+          <p class="standfirst"><em>Keepers were baffled by a flood of parcels addressed to 'The Lads, Enclosure 4' – before uncovering the troop's elaborate subscription scheme</em></p>
+
+          <div class="byline">
+            <span class="author">By Zoo &amp; Wildlife Correspondent</span>
+            <span>·</span>
+            <span id="bydate">06:00, 16 JUN 2026</span>
+            <span class="share">
+              <button title="Share on Facebook" aria-label="Share on Facebook">f</button>
+              <button title="Share on X" aria-label="Share on X">𝕏</button>
+              <button title="Copy link" aria-label="Copy link" onclick="navigator.clipboard&&navigator.clipboard.writeText(location.href)">🔗</button>
+            </span>
+          </div>
+
+          <figure>
+            <div class="ph"><span>🐒</span></div>
+            <figcaption><strong>Gerald the capuchin</strong> is said to be the brains behind the troop's shared subscription (Image: BristolLive)</figcaption>
+          </figure>
+
+          <div class="body">
+            <p>A troop of monkeys at a Bristol zoo have been rumbled secretly sharing a single Amazon Prime account – leaving keepers stunned at just how organised the cheeky primates had become.</p>
+            <p>Staff at the attraction were left scratching their heads this week after a suspicious number of parcels began turning up at the primate house, all addressed to "The Lads, Enclosure 4".</p>
+            <p>Inside the boxes, keepers say they found a banana slicer, a weighted blanket and three copies of a self-help book titled <em>Stop Monkeying Around</em>.</p>
+            <p>Head keeper Denise Florr said the troop had managed to keep the whole thing quiet for weeks.</p>
+            <div class="pullquote">"We always knew they were close. But we had no idea they'd gone in together on a subscription. It's the most organised thing I've seen all year."</div>
+
+            <h2>'More organised than our staff room'</h2>
+            <p>According to staff, the ringleader is an enterprising capuchin named Gerald, who is said to have set up the account, added the rest of the troop as authorised users, and demanded they pay him back each month for their share.</p>
+            <p>The spider monkeys, keepers admit, kept dodging their half of the bill.</p>
+            <p>CCTV from the enclosure reportedly showed the troop gathered around a tablet most evenings, bingeing nature documentaries late into the night – though they are said to have consistently skipped anything featuring snakes.</p>
+            <p>"The free delivery was the real draw," Ms Florr explained. "When you've got no thumbs and no wallet, next-day shipping is a genuine game-changer.</p>
+            <p>"They'd worked out the whole system. Honestly, it was more organised than our staff break room."</p>
+
+            <h2>Tantrum over device limit</h2>
+            <p>Trouble only started, staff say, when the account hit its device limit and a junior macaque was locked out halfway through a documentary.</p>
+            <p>One witness described the resulting scene as "an absolutely textbook tantrum, banana and all".</p>
+            <p>But zoo management say they are taking a relaxed view of the whole affair.</p>
+            <p>"We're not going to ape outrage over it," a spokesperson said. "They've shown teamwork, budgeting and a frankly impressive grasp of subscription economics.</p>
+            <p>"We're now seriously considering putting them in charge of the gift shop."</p>
+            <p>The account has since been switched to a family plan. Gerald, BristolLive understands, remains the responsible adult.</p>
+            <p>As for what staff are now calling the troop? Ms Florr didn't hesitate. "Well," she grinned, "they really are prime mates."</p>
+          </div>
+
+          <div class="tags">
+            <a href="#">Bristol</a><a href="#">Animals</a><a href="#">Weird News</a>
+            <a href="#">Amazon</a><a href="#">Zoo</a>
+          </div>
+        </div>
+      </article>
+
+      <section class="comments">
+        <div class="chead">Comments <span class="count" id="ccount">3</span></div>
+        <div class="cform">
+          <textarea id="ctext" placeholder="Join the conversation..."></textarea>
+          <div class="row">
+            <input id="cname" type="text" placeholder="Your name">
+            <button onclick="addComment()">Post comment</button>
+          </div>
+        </div>
+        <div class="clist" id="clist">
+          <div class="comment">
+            <div class="meta"><span class="name">BedminsterBren</span><span class="time">2 hours ago</span></div>
+            <div class="text">Classic Gerald. Knew he'd land on his feet.</div>
+            <div class="votes"><button onclick="vote(this,1)">▲ 47</button><button onclick="vote(this,-1)">▼ 2</button><span>Reply</span></div>
+          </div>
+          <div class="comment">
+            <div class="meta"><span class="name">CliftonCarol</span><span class="time">3 hours ago</span></div>
+            <div class="text">The spider monkeys not paying their share is the most realistic part of this whole story.</div>
+            <div class="votes"><button onclick="vote(this,1)">▲ 112</button><button onclick="vote(this,-1)">▼ 0</button><span>Reply</span></div>
+          </div>
+          <div class="comment">
+            <div class="meta"><span class="name">FishpondsPhil</span><span class="time">4 hours ago</span></div>
+            <div class="text">Put them in charge of the gift shop, they'll have it turning a profit by Friday.</div>
+            <div class="votes"><button onclick="vote(this,1)">▲ 38</button><button onclick="vote(this,-1)">▼ 5</button><span>Reply</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="aside">
+      <div class="widget">
+        <h3>Most Read</h3>
+        <ol>
+          <li><a href="#">Bristol zoo monkeys caught sharing ONE Amazon account</a></li>
+          <li><a href="#">Seagull steals entire Greggs order on Park Street 'in broad daylight'</a></li>
+          <li><a href="#">M5 traffic: long delays near Avonmouth after lorry sheds load of beans</a></li>
+          <li><a href="#">Clifton café introduces £9 'artisan' toast and locals are furious</a></li>
+          <li><a href="#">'Mystery' Banksy appears overnight in Bedminster car park</a></li>
+        </ol>
+      </div>
+      <div class="widget">
+        <h3>Newsletter</h3>
+        <div class="promo">
+          <div class="big">Get the latest Bristol news</div>
+          Sign up to our free daily email for everything happening across the city.
+          <div class="row" style="display:flex;gap:0.4rem;margin-top:0.6rem;">
+            <input type="text" placeholder="Your email" style="flex:1;border:1px solid var(--rule);border-radius:6px;padding:0.5rem;font-size:0.85rem;">
+            <button onclick="alert('Subscribed! (not really)')" style="background:var(--brand);color:#fff;border:none;border-radius:6px;padding:0.5rem 0.8rem;font-weight:700;cursor:pointer;">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site"><div class="inner">
+    <div class="logo-sm">Bristol<span class="live">Live</span></div>
+    A parody page · No monkeys, capuchins, or Amazon accounts were harmed in the making of this article.
+  </div></footer>
+
+<script>
+  function vote(btn, dir){
+    const m = btn.textContent.match(/(\d+)/);
+    if(!m) return;
+    let n = parseInt(m[1],10) + (dir>0?1:1);
+    btn.textContent = (dir>0?'▲ ':'▼ ') + n;
+  }
+  function addComment(){
+    const name = document.getElementById('cname').value.trim() || 'Anonymous';
+    const text = document.getElementById('ctext').value.trim();
+    if(!text) return;
+    const list = document.getElementById('clist');
+    const div = document.createElement('div');
+    div.className = 'comment';
+    div.innerHTML = '<div class="meta"><span class="name"></span><span class="time">just now</span></div>'
+      + '<div class="text"></div>'
+      + '<div class="votes"><button onclick="vote(this,1)">\u25B2 0</button><button onclick="vote(this,-1)">\u25BC 0</button><span>Reply</span></div>';
+    div.querySelector('.name').textContent = name;
+    div.querySelector('.text').textContent = text;
+    list.insertBefore(div, list.firstChild);
+    document.getElementById('ctext').value='';
+    document.getElementById('cname').value='';
+    const c = document.getElementById('ccount');
+    c.textContent = parseInt(c.textContent,10)+1;
+  }
+</script>
+</body>
+</html>
